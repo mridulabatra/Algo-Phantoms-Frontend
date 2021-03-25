@@ -29,7 +29,7 @@
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    animation: rot 1s linear infinite;
+    animation: rot 5s linear infinite;
    border-right: 4px solid #3caea3;
    border-left: 4px solid #fff;
 }
@@ -47,8 +47,8 @@ body {
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -63,14 +63,16 @@ li {
 header {
     overflow: hidden;
     height: 100vh;
+    
 }
 
 .vid-bg {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    mix-blend-mode: overlay;
 }
 
 .navbar-nav a {
@@ -123,12 +125,21 @@ header {
     position: absolute;
     top: 35%;
     z-index: 1;
+    background-image: url(video/video.mp4);
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .banner-text .main-head {
     color: #fff;
     font-size: 4rem;
     margin: 0;
+    position: relative;
+    left: 100px;
+    top: 10px;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
 }
 
 .banner-text .main-head span {
@@ -138,6 +149,7 @@ header {
 .banner-text p {
     color: #b8d5cd;
     font-size: 30px;
+    padding-top:30px;
     margin: 0;
     font-weight: bold;
 }
@@ -221,7 +233,11 @@ header {
     font-size: 50px;
     font-weight: bold;
     backdrop-filter: blur(20px);
-}
+    width: 100%;
+    color: turquoise;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+} 
 
 hr {
     border: 1px solid #3caea3;
@@ -232,10 +248,18 @@ hr {
 
 .about p {
     font-size: 23px;
+    color: whitesmoke;
+    text-align: center;
 }
 
 .about-content {
     margin-top: 50px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    height: 100px;
+    color: white;
+    font-size: 30px;
 }
 
 
